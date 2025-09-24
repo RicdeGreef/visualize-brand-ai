@@ -13,12 +13,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'inter': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        /* Brand Colors */
+        'brand-primary': "hsl(var(--brand-primary))",
+        'brand-primary-dark': "hsl(var(--brand-primary-dark))",
+        'brand-primary-light': "hsl(var(--brand-primary-light))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -58,7 +66,11 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
-      borderRadius: {
+      boxShadow: {
+          'brand': '0 10px 30px -10px hsl(var(--brand-primary) / 0.3)',
+          'soft': '0 4px 20px -4px hsl(0 0% 0% / 0.1)',
+        },
+        borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
